@@ -17,6 +17,7 @@ import dontpad
 ```
 #### Methods
 - `read`
+
     The `read` method receives a url extension to look for in the dontpad domain. It retrives the contents present at the location and returns a dictionary. This dictionary contains the timestamp of the last update at this url extension, its contents and a flag saying that the content was changed.
 
     Example code
@@ -27,6 +28,7 @@ import dontpad
     ```
     
 - `write`
+
     The `write` method commits a string to a given url extension. Its first argument is the url extension to which to upload the content. The following argument is a string containing the contents to be uploaded.
     Example code
     ```python
@@ -39,6 +41,7 @@ import dontpad
 ### CLI
 This API also comes with a CLI. To use it, simply use the folloing formats.
 - `reading`
+
     Uses the `read` method from the python API to retrieve data from the given url extension. To use this mode, simply pass the `-r` flag to the CLI followed by the `url extension`. It's the default option if no flags are passed.
 
     Example code
@@ -48,6 +51,7 @@ This API also comes with a CLI. To use it, simply use the folloing formats.
     ```
     
 - `writing`
+
     Analogously to the read argument, this uses the `write` method from the python API to update the contents of a given url extension. To use this mode pass the `-w` flag followed by the `url extension`. All arguments passed henceforth are treated as a string to be uploaded.
     Example code
     ```bash
