@@ -38,7 +38,7 @@ import dontpad
     >>> import dontpad
     >>> dontpad.write("url_extension", "Changed the contents of this note.")
     >>> dontpad.read("url_extension")
-    {'lastUpdate': 1519360432000, 'body': 'Changed the contents of this note.', 'changed': True}
+    'Changed the contents of this note.'
     ```
     
 ### CLI
