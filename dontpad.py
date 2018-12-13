@@ -18,10 +18,10 @@ def read_raw(page):
 		resp = response.read()
 	return resp
 
-def read(page):
+def read(page, full_json=False):
 	content = json.loads(read_raw(page).decode())
-	if content["body"]:
-		return content
+	if "body" in content:
+		return content["body"] if not full_json else content
 	return ""
 
 if __name__ == "__main__":

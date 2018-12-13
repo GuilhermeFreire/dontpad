@@ -30,6 +30,7 @@ import dontpad
 - `write`
 
     The `write` method commits a string to a given url extension. Its first argument is the url extension to which to upload the content. The following argument is a string containing the contents to be uploaded.
+
     Example code
     ```python
     >>> import dontpad
@@ -46,7 +47,7 @@ This API also comes with a CLI. To use it, simply use the folloing formats.
 
     Example code
     ```bash
-    $ dontpad -r dontpad url_extension
+    $ dontpad -r url_extension
     {'lastUpdate': 1519360432000, 'body': 'Changed the contents of this note.', 'changed': True}
     ```
     
